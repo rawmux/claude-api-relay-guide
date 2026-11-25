@@ -62,6 +62,12 @@ python3 check_relay.py --base-url https://某站域名 --model claude-sonnet-5-5
 
 ---
 
+## 文档目录
+
+- [Prompt Caching 原理与命中排查](docs/prompt-caching.md)：缓存匹配规则、官方费率、最小长度阈值及不命中排查
+
+---
+
 ## 三、官方价格参考
 
 对比各渠道价格时，先换算成和官方价的比例，再看缓存。以下为 Anthropic 官方价（美元 / 百万 token，2026-11-25）：
@@ -90,4 +96,5 @@ python3 check_relay.py --base-url https://某站域名 --model claude-sonnet-5-5
 
 ## 更新记录
 
+- 2026-11-25：新增 `docs/prompt-caching.md` 缓存机制与排查文档
 - 2026-11-25：初版
