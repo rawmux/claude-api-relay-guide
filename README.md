@@ -64,13 +64,14 @@ python3 check_relay.py --base-url https://某站域名 --model claude-sonnet-5-5
 
 ## 文档目录
 
+- [Claude Code 接入自定义网关 / Base URL](docs/claude-code-gateway.md)：环境变量与设置文件配置、VS Code / CI 适配、`curl` 验证及 401/403/429/529/400 排查
 - [Prompt Caching 原理与命中排查](docs/prompt-caching.md)：缓存匹配规则、官方费率、最小长度阈值及不命中排查
 
 ---
 
 ## 三、官方价格参考
 
-对比各渠道价格时，先换算成和官方价的比例，再看缓存。以下为 Anthropic 官方价（美元 / 百万 token，2026-11-25）：
+对比各渠道价格时，先换算成和官方价的比例，再看缓存。以下为 Anthropic 官方价（美元 / 百万 token，核对于 2026-11-26）：
 
 | 模型 | 输入 | 5 分钟缓存写 | 1 小时缓存写 | 缓存读 | 输出 |
 |---|---|---|---|---|---|
@@ -96,5 +97,6 @@ python3 check_relay.py --base-url https://某站域名 --model claude-sonnet-5-5
 
 ## 更新记录
 
+- 2026-11-26：新增 `docs/claude-code-gateway.md` Claude Code 自定义网关配置与报错排查文档；核对官方价格与缓存最小长度无变动
 - 2026-11-25：新增 `docs/prompt-caching.md` 缓存机制与排查文档
 - 2026-11-25：初版
